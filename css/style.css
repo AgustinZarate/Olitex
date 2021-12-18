@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card-presentation {
+    /* Background color */
+    background-color: rgba(0, 0, 0, 0.3);
+
+    /* You can use gradient background color such as */
+background: linear-gradient(rgba(43, 255, 0, 0.411) 0%, rgba(0, 0, 0, 0.1) 100%);
+
+    /* Curved corners */
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+    min-height: 550px;
+}
+
+
+/* texto encima de imagen */
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.centrado{
+    margin: 1rem 0;
+    width: 95%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.center {
+    margin: 1rem auto !important;
+}
+.aling-center {
+    margin: auto 1rem !important;
+}
+
+
+.card-presentation {
+    /* Background color */
+/*     background-color: rgba(0, 0, 0, 0.3);   */
+
+
+    /* You can use gradient background color such as */
+/* background: linear-gradient(rgba(43, 255, 0, 0.411) 0%, rgba(0, 0, 0, 0.1) 100%); */
+
+    /* Curved corners */
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+    min-height: 450px;
+} 
+
+h1 {
+    color: black;
+    background-color: aquamarine;
+}
+
+/* hr{ 
+    color: red; 
+    border-left:    7px solid;
+    height:         75%;
+    width:          1px;       
+} */
+p {
+    font-size: 2vw;
+}
+.map {
+margin: 0.5rem auto;
+width: 400px;
+height: 40vw    /* 550px */;
+}
+
+li{
+    list-style: none;
+    margin: 20px;
+    
+}
+.icon {
+    margin-right: 20px;
+    width: 2.5vw;
+    
+}
+
+.container-form {
+    max-width: 724px;
+    
+}
+    
+/* Laptop 1024px */
+@media only screen and (min-width: 1024px) and (max-width: 1055px) {
+    .carousel {
+        margin: 12vw auto;
+    }  
+}
+
+
+/* tablet */
+@media only screen and (min-width: 426px) and (max-width: 991px) {
+    .sobre-nosotros .col-6 {
+        width: 50%;
+    }
+    .sobre-nosotros .col-6-s {
+        width: 50%;
+    }
+    .sobre-nosotros .col-6 img{
+        width: 100% !important;
+    } 
+    .map {
+        width: 100%;
+        height: 250px;
+        margin: 3rem auto
+    }
+    .icon {
+        margin-right: 20px;
+        width: 5vw;
+        
+    }
+    .col-8 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .sobre-nosotros {
+        display: flex;
+    }
+
+    .card-presentation {
+        min-height: 700px;
+    } 
+}
+
+
+/* Mobile L */
+@media only screen and (min-width: 320px) and (max-width: 426px) {
+    /* p {
+        font-size: 2.5vw;
+    } */
+/*     li{
+        font-size: 2vw;
+        
+    } */
+    .icon {
+        margin-right: 20px;
+        width: 6vw;
+        
+    }
+    .centrado{
+
+        top: 60%;
+    }
+    .sobre-nosotros .col-6 {
+        width: 50%;
+    }
+    .sobre-nosotros .col-6 img{
+        width: 100% !important;
+    } 
+    .map {
+        width: 100%;
+        height: 150px;
+        margin: 2rem 0;
+    }
+    .row-cols-1>* {
+            width: 50%;
+    }
+    .col-8 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .sobre-nosotros {
+        display: flex;
+    }
+}
