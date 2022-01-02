@@ -7,49 +7,49 @@ btnMinorista.addEventListener('click', ()=>{
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
+                <label class="form-label">
                     Nombre y Apellido:
                 </label>
                 <input class="form-control" type="text" id="from_name">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
+                <label class="form-label">
                     Nombre empresa:
                 </label>
                 <input class="form-control" type="text" id="from_name_business">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
+                <label class="form-label">
                     Telefono:
                 </label>
                 <input class="form-control" type="number" id="from_number">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
+                <label class="form-label">
                     Asunto:
                 </label>
                 <input class="form-control" type="text" id="subject">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
+                <label class="form-label">
                     Fechas:
                 </label>
                 <input class="form-control" type="date" id="date">
-                </input>
+                </input class="form-label">
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
+                <label class="form-label">
                     Correo:
                 </label>
                 <input class="form-control" type="email" id="from_email">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
+                <label class="form-label">
                     Pedido:
                 </label>
                 <textarea class="form-control" id="message">
@@ -62,7 +62,7 @@ btnMinorista.addEventListener('click', ()=>{
                     <option value="Tarjeta">Tarjeta</option>
                 </select>
             </div>
-            <div class="col-sm-6 col-sm-offset-3 text-center">
+            <div class="col-sm-6 m-5 col-sm-offset-3 text-center">
                 <button class="btn btn-success" id="btnSubmit">
                     Enviar
                 </button>
@@ -91,9 +91,9 @@ btnMinorista.addEventListener('click', ()=>{
 
 function enviarEmail(datos) {
         var data = {
-        service_id: '<SERVICE ID>',
-        template_id: '<tEMPLATE ID (SETTING)>',
-        user_id: '<USER ID INTEGARTION>',
+            service_id: 'service_587qnht',
+            template_id: 'template_isnaw6t',
+            user_id: 'user_WLyYGWyyqbiWsSDZn4FQH',
         template_params: {
             from_name: datos.nombre,
             from_email: datos.email,
