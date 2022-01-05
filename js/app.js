@@ -7,49 +7,49 @@ btnMinorista.addEventListener('click', ()=>{
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label class="form-label">
+                <label>
                     Nombre y Apellido:
                 </label>
                 <input class="form-control" type="text" id="from_name">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label class="form-label">
+                <label>
                     Nombre empresa:
                 </label>
                 <input class="form-control" type="text" id="from_name_business">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label class="form-label">
+                <label>
                     Telefono:
                 </label>
                 <input class="form-control" type="number" id="from_number">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label class="form-label">
+                <label>
                     Asunto:
                 </label>
                 <input class="form-control" type="text" id="subject">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label class="form-label">
+                <label>
                     Fechas:
                 </label>
                 <input class="form-control" type="date" id="date">
-                </input class="form-label">
+                </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label class="form-label">
+                <label>
                     Correo:
                 </label>
                 <input class="form-control" type="email" id="from_email">
                 </input>
             </div>
             <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label class="form-label">
+                <label>
                     Pedido:
                 </label>
                 <textarea class="form-control" id="message">
