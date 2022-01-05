@@ -6,6 +6,7 @@
 
 /* nav */
 .navbar {
+background-color: #26272b38 !important;
 Position: fixed;
 Top: 0;
 Left: 0;
@@ -14,13 +15,18 @@ Display: Flex;
 Justify-content: space-between;
 align-items: center;
 Transition: 0.6s;
-Padding: 40px 100px;
+Padding: 15px 100px;
+font-size: 1.5rem;
 z-index: 1000;
 }
 
 nav.sticky {
-	padding: 5px 100px;
-	background-color: #007bb6 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	padding: 0px;
+	background-color: #26272b  !important;
+  font-size: 1rem;
 }
 
 
@@ -33,6 +39,10 @@ nav.sticky {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	transition: 0.6s;
+}
+
+.navbar-collapse {
+  justify-content: end;
 }
 
 .navbar-collapse ul {
@@ -51,16 +61,19 @@ nav.sticky {
 	position: relative;
 	margin: 0 15px;
 	text-decoration: none;
-	color: #fff;
+	color: #fff !important;
 	letter-spacing: 2px;
-	font-weight: 500px;
 	transition: 0.5s;
+}
+
+.navbar-collapse ul li a:hover {
+  border-bottom: 3px solid #fff;
+  border-radius: 5px;
 }
 
 .card-presentation {
 	position: relative;
 	width: 100%;
-	height: 100vh;
 }
 
 /* texto encima de imagen */
@@ -115,7 +128,7 @@ p {
 .map {
 margin: 0.5rem auto;
 width: 400px;
-height: 40vw    /* 550px */;
+height: 30vw    /* 550px */;
 }
 
 li{
@@ -124,7 +137,6 @@ li{
     
 }
 .icon {
-    margin-right: 20px;
     width: 2.5vw;
     
 }
@@ -295,7 +307,7 @@ li{
 {
   background-color:#007bb6
 }
-.social-icons a.dribbble:hover
+.social-icons a.instagram:hover
 {
   background-color:#ea4c89
 }
