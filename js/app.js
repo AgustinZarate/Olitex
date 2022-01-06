@@ -1,78 +1,9 @@
 const contenedorForm = document.getElementById('contenedorForm')
-let btnMinorista = document.getElementById('pedidoMinorista')
 
-
-btnMinorista.addEventListener('click', ()=>{
-    contenedorForm.innerHTML = `
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
-                    Nombre y Apellido:
-                </label>
-                <input class="form-control" type="text" id="from_name">
-                </input>
-            </div>
-            <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
-                    Nombre empresa:
-                </label>
-                <input class="form-control" type="text" id="from_name_business">
-                </input>
-            </div>
-            <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
-                    Telefono:
-                </label>
-                <input class="form-control" type="number" id="from_number">
-                </input>
-            </div>
-            <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
-                    Asunto:
-                </label>
-                <input class="form-control" type="text" id="subject">
-                </input>
-            </div>
-            <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
-                    Fechas:
-                </label>
-                <input class="form-control" type="date" id="date">
-                </input>
-            </div>
-            <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
-                    Correo:
-                </label>
-                <input class="form-control" type="email" id="from_email">
-                </input>
-            </div>
-            <div class="col-sm-6 col-sm-offset-3 form-group">
-                <label>
-                    Pedido:
-                </label>
-                <textarea class="form-control" id="message">
-                </textarea>
-            </div>
-            <div class="col-sm-6 col-sm-offset-3 form-group">
-                <select id="selectPagos">
-                    <option value="Efectivo">Efectivo</option>
-                    <option value="Transferencia">Transferencia</option>
-                    <option value="Tarjeta">Tarjeta</option>
-                </select>
-            </div>
-            <div class="col-sm-6 m-5 col-sm-offset-3 text-center">
-                <button class="btn btn-success" id="btnSubmit">
-                    Enviar
-                </button>
-            </div>
-        </div>
-    </div>
-    `
     const btnSubmit = document.getElementById('btnSubmit')
 
-    btnSubmit.addEventListener('click', ()=>{
+    btnSubmit.addEventListener('click', (e)=>{
+        e.preventDefault()
         let datos = {
          nombre: document.getElementById('from_name').value,
          empresa: document.getElementById('from_name_business').value,
@@ -87,7 +18,7 @@ btnMinorista.addEventListener('click', ()=>{
         enviarEmail(datos)
     })
     
-})
+// })
 
 function enviarEmail(datos) {
         var data = {

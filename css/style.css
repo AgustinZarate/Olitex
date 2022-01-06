@@ -64,16 +64,39 @@ nav.sticky {
 	color: #fff !important;
 	letter-spacing: 2px;
 	transition: 0.5s;
+  border-bottom: 1px solid #fff;
 }
 
 .navbar-collapse ul li a:hover {
-  border-bottom: 3px solid #fff;
-  border-radius: 5px;
+  border-bottom: 2px solid #fff;
+  border-radius: 8px;
 }
 
 .card-presentation {
 	position: relative;
 	width: 100%;
+}
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+  
+
+.img-nosotros {
+  border-radius: 20px; 
+  height: 450px;
+}
+
+.p-nosotros {
+  margin: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+
+.shadow {
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.356);;
 }
 
 /* texto encima de imagen */
@@ -92,7 +115,7 @@ nav.sticky {
 .centrado{
     margin: 1rem 0;
     width: 95%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.685);
     border-radius: 20px;
     padding: 1rem;
     position: absolute;
@@ -157,8 +180,13 @@ li{
 
 
 /* footer */
+.footer-img {
+  width: 100%;
+}
+
 .site-footer
 {
+  margin-top: 3rem;
   background-color:#26272b;
   padding:45px 0 20px;
   font-size:15px;
@@ -331,11 +359,22 @@ li{
     .carousel {
         margin: 12vw auto;
     }  
+    .map {
+    width: 350px;
+    height: 20vw;
+    }
 }
 
 
 /* tablet */
 @media only screen and (min-width: 426px) and (max-width: 991px) {
+
+  
+  .navbar .logo {
+    font-size: 1em;
+  }
+
+
     .sobre-nosotros .col-6 {
         width: 50%;
     }
@@ -367,25 +406,46 @@ li{
     .sobre-nosotros {
         display: flex;
     }
+
+    .booking-form {
+      display: flex;
+    }
+
+    .footer-descriction {
+      display: flex;
+      flex-direction: column ;
+    }
+
+    .footer-img {
+      width: 50%;
+    }
 }
 
 
 /* Mobile L */
 @media only screen and (min-width: 320px) and (max-width: 426px) {
-    /* p {
-        font-size: 2.5vw;
-    } */
+
+  .navbar {
+    Padding: 0px 40px;
+  }
+
+  nav.sticky {
+    padding: 0px 10px;
+  }
+
+    p {
+    font-size: 4vw;
+  }
 /*     li{
         font-size: 2vw;
         
     } */
     .icon {
-        margin-right: 20px;
         width: 6vw;
         
     }
     .centrado{
-
+        margin: 0rem 0;
         top: 60%;
     }
     .sobre-nosotros .col-6 {
@@ -414,6 +474,51 @@ li{
     .sobre-nosotros {
         display: flex;
     }
+
+    .booking-bg {
+      display: none;
+    }
+
+    .booking-form {
+      width: 75%;
+      height: 100%;
+      background-image: url('../img/fotos/maquina-2.jpeg');
+      
+    }
+
+    .footer-img {
+      width: 50%;
+      margin: 0 7rem;
+    }
+
+    .site-footer {
+      margin-top: 10rem;
+    }
+
+    .footer-descriction {
+      display: flex;
+      flex-direction: column ;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    
+
+    .navbar .logo {
+      font-size: .8em;
+    }
+
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+      margin-right: 0;
+      margin-left: 0;
+  }
+
 }
 
 
@@ -616,6 +721,8 @@ button, select {
     padding: 0.2rem;
     border-radius: 10px;
 }
+
+
 
 @media only screen and (max-width: 768px) {
 	.booking-form .booking-bg {
