@@ -3,7 +3,6 @@
     padding: 0;
 	font-family: 'Alice', serif;
 }
-
 /* nav */
 .navbar {
 background-color: #26272b38 !important;
@@ -471,6 +470,10 @@ li{
     .col-4 {
         width: 100%;
     }
+    .row {
+  width: 100%;
+    }
+
     .sobre-nosotros {
         display: flex;
     }
@@ -488,7 +491,7 @@ li{
 
     .footer-img {
       width: 50%;
-      margin: 0 7rem;
+      margin: 0 6rem;
     }
 
     .site-footer {
@@ -519,6 +522,50 @@ li{
       margin-left: 0;
   }
 
+  footer hr {
+    display: none;
+  }
+
+
+  .booking-form {
+    position: relative;
+    top: 11rem;
+    left: 0.9rem;
+    width: 90% !important;
+  }
+
+.site-footer {
+  position: relative;
+  top: 35rem;
+}
+
+  .section {
+    position:absolute;
+    top: 10rem;
+    max-height: 10rem;
+  }
+
+  .booking-form {
+    background-image: url('../img/fotos/maquina-10.jpeg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .form-label {
+    color: white !important;
+  }
+
+  .pedido {
+    margin-top: 3rem;
+  }
+
+  .contactanos hr {
+    margin-bottom: 3rem;
+  }
+
+  #booking {
+    background-color: unset !important;
+  }
 }
 
 
@@ -540,7 +587,7 @@ li{
 
 #booking {
 	font-family: 'Alice', serif;
-	background: rgba(133, 104, 73, 0.33);
+  background: #212529c2 !important;
 }
 
 .booking-form {
@@ -577,7 +624,7 @@ li{
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background: rgba(133, 104, 73, 0.78);
+	background: #212529c2;
 }
 
 .booking-form>form {
