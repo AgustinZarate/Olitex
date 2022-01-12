@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-sacale=5.0">
+  <!-- Description, entre 70 a 320 caracteres -->
+  <meta name="description" content="Olitex es una empresa textil dedicada a la tejeduría de punto, para asegurarnos que nuestro producto sean de
+          excelente calidad trabajamos con las mejores hilanderías a nivel nacional para ofrecerte la mejor opción
+          precio calidad">
+  <!-- Keywords -->
+  <meta name="keywords"
+    content="olitex, Olitex, OLITEX, tejeduría, tejeduria, textil, san miguel, hiladeria, tienda, comercio, jose c paz, chile 1023">
+  <!-- protocolo Open graph -->
+  <meta property="og:title" content="Olitex, Tejeduria textil">
+  <meta property="og:image" content="img/logo/Olitex_presentcion-sombra-negro.jpg">
+  <meta property="og:author" content="Agustin F. Zarate, developer Olitex">
+  <meta property="og:description" content="Olitex es una empresa textil dedicada a la tejeduría de punto, para asegurarnos que nuestro producto sean de
+        excelente calidad trabajamos con las mejores hilanderías a nivel nacional para ofrecerte la mejor opción
+        precio calidad">
+  <link rel="icon" href="img/iconos/favicon.ico">
   <title>Olitex</title>
-
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
   <head>
     <!-- Navegador -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-
-        <a class="navbar-brand logo" href="#">OLITEX</a>
+        <h1 class="navbar-brand logo">OLITEX</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,13 +55,11 @@
         </div>
       </div>
     </nav>
-
     <div class="card-presentation">
-      <img src="img/logo/Olitex_presentcion-sombra-negro.jpg" class="w-100 img-presentacion" alt="">
+      <img src="img/logo/Olitex_presentcion-sombra-negro.jpg" class="w-100 img-presentacion" loading="lazy"
+        alt="Imagen presentacion del sitio">
     </div>
   </head>
-
-
   <main>
     <!-- Nosotros -->
     <section class="sobre-nosotros center">
@@ -60,10 +69,9 @@
         </div>
         <hr>
         <div class="col-8">
-
           <div class="contenedor">
-            <img src="img/fotos/maquina-16.jpeg" class="w-100" style="border-radius: 20px;" alt="">
-            <div class="texto-encima">Texto</div>
+            <img src="img/fotos/maquina-16.jpeg" class="w-100" loading="lazy" style="border-radius: 20px;"
+              alt="Fotografia maquina hiladora">
             <div class="centrado shadow">
               <p>
                 Somos una empresa textil dedicada a la tejeduría de punto, para asegurarnos que nuestro producto sean de
@@ -82,30 +90,27 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.7739999095603!2d-58.73229227079527!3d-34.52579569388245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbdacbafaa6cd%3A0x6584995fa0660d60!2sChile%201023%2C%20B1665%20FPV%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1639484793573!5m2!1ses-419!2sar"
             class="map" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-            
-            
         </div>
       </div>
     </section>
-
-
-
-    <!-- FOTOS ILUSTRATIVAS -->
     <!-- Carousel -->
     <section class="center" id="nosotros">
-        <hr>
+      <hr>
       <div class="row container-fluid">
         <div class="col-6 d-flex align-items-center">
           <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/fotos/carrousel.png" class="d-block w-100" alt="...">
+                <img src="img/fotos/carrousel.png" class="d-block w-100" loading="lazy"
+                  alt="dos fotografias de maquinas hiladoras">
               </div>
               <div class="carousel-item">
-                <img src="img/fotos/carrousel-1.png" class="d-block w-100" alt="...">
+                <img src="img/fotos/carrousel-1.png" class="d-block w-100" loading="lazy"
+                  alt="tres imagenes relacionadas a hilos">
               </div>
               <div class="carousel-item">
-                <img src="img/fotos/carrousel-2.png" class="d-block w-100" alt="...">
+                <img src="img/fotos/carrousel-2.png" class="d-block w-100" loading="lazy"
+                  alt="dos fotografias de maquinas hiladoras">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -122,199 +127,322 @@
         </div>
         <div class="col-6">
           <ul class="d-flex flex-column justify-content-around">
-            <li><img src="img/iconos/aguja.png" class="icon me-2"" alt="">Comprometidos en responder con responsabilidad y con artículos de primera calidad para que nuestros clientes estén a gusto por trato personalizado que podemos ofrecerles</li>
+            <li><img src="img/iconos/aguja.png" loading="lazy" class="icon me-2"" alt=" Icono de una
+                aguja">Comprometidos en responder con responsabilidad y con artículos de primera calidad para que
+              nuestros clientes estén a gusto por trato personalizado que podemos ofrecerles</li>
             <hr>
-            <li><img src="img/iconos/tela.png" class="icon me-2"" alt="">Trabajamos con stock permanente de nuestros artículos <b>(colores estarán disponibles de forma rotativa en stock)</b> .  También pactaremos entregas programadas en caso de adquirir baños completos de <b>200kg</b>  por color.</li>
+            <li><img src="img/iconos/tela.png" class="icon me-2" loading="lazy"
+                alt="Icono de un rollo de tela">Trabajamos con stock permanente de nuestros artículos <b>(colores
+                estarán disponibles de forma rotativa en stock)</b> . También pactaremos entregas programadas en caso de
+              adquirir baños completos de <b>200kg</b> por color.</li>
             <hr>
-            <li><img src="img/iconos/tijeras-de-coser.png" class="icon me-2"" alt="">Contamos con un trabajo selectivo con nuestros tejedores en el control de calidad de los hilados.</li>
+            <li><img src="img/iconos/tijeras-de-coser.png" class="icon me-2" loading="lazy"
+                alt="Icono de unas tijeras">Contamos con un trabajo selectivo con nuestros tejedores en el control de
+              calidad de los hilados.</li>
           </ul>
         </div>
       </div>
     </section>
-
-
     <!-- CORTES -->
     <section class="container m-5 p-5 center" id="productos">
       <div class="text-center m-5">
         <hr>
         <h2>Tipos de telas</h2>
       </div>
-
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        
         <div class="col">
-          
           <div class="card">
-            <span class="color-negro"><p>#000 Negro </p></span>
-            <span class="color-blanco"><p>#FFF Blanco</p></span>
-            <span class="color-gris-melange"><p>#9C9C9C Gris Melange</p></span>
-            <span class="color-azul-marino"><p>#252440 Azul Marino</p></span>
-            <span class="color-verde"><p>#008000 Verde</p></span>
-            <span class="color-amarillo"><p>#FFFF00 Amarillo</p></span>
-            <span class="color-naranja"><p>#FF8000  Naranja</p></span>
-            <span class="color-rosa"><p>#F7BFBE Rosa</p></span>
-            <span class="color-gris-topo"><p>#646b63 Gris Topo</p></span>
-            <span class="color-temporada"><p>Color de temporada a pedido</p></span>
-            <img src="img/cortes/Jersey-24-1-peinado.jpg" class="card-img-top" alt="...">
-            
+            <span class="color-negro">
+              <p>#000 Negro </p>
+            </span>
+            <span class="color-blanco">
+              <p>#FFF Blanco</p>
+            </span>
+            <span class="color-gris-melange">
+              <p>#9C9C9C Gris Melange</p>
+            </span>
+            <span class="color-azul-marino">
+              <p>#252440 Azul Marino</p>
+            </span>
+            <span class="color-verde">
+              <p>#008000 Verde</p>
+            </span>
+            <span class="color-amarillo">
+              <p>#FFFF00 Amarillo</p>
+            </span>
+            <span class="color-naranja">
+              <p>#FF8000 Naranja</p>
+            </span>
+            <span class="color-rosa">
+              <p>#F7BFBE Rosa</p>
+            </span>
+            <span class="color-gris-topo">
+              <p>#646b63 Gris Topo</p>
+            </span>
+            <span class="color-temporada">
+              <p>Color de temporada a pedido</p>
+            </span>
+            <img src="img/cortes/Jersey-24-1-peinado.jpg" class="card-img-top" loading="lazy"
+              alt="tela tipo jersey 24 1 peinado">
             <div class="card-body">
-              <h5 class="card-title">  Jersey 24/1 peinado </h5>
+              <h5 class="card-title"> Jersey 24/1 peinado </h5>
               <p><span style="color: rgb(7, 161, 71); font-size: 2vw;">*Stock permanente</span></p>
-<!--               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p> -->
             </div>
-            
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <span class="color-negro"><p>#000 Negro </p></span>
-            <span class="color-blanco"><p>#FFF Blanco</p></span>
-            <span class="color-gris-melange"><p>#9C9C9C Gris Melange</p></span>
-            <span class="color-azul-marino"><p>#252440 Azul Marino</p></span>
-            <span class="color-verde"><p>#008000 Verde</p></span>
-            <span class="color-amarillo"><p>#FFFF00 Amarillo</p></span>
-            <span class="color-naranja"><p>#FF8000  Naranja</p></span>
-            <span class="color-rosa"><p>#F7BFBE Rosa</p></span>
-            <span class="color-gris-topo"><p>#646b63 Gris Topo</p></span>
-            <span class="color-temporada"><p>Color de temporada a pedido</p></span>
-            <img src="img/cortes/Jersey-30-1-Peinado.jpg" class="card-img-top" alt="...">
+            <span class="color-negro">
+              <p>#000 Negro </p>
+            </span>
+            <span class="color-blanco">
+              <p>#FFF Blanco</p>
+            </span>
+            <span class="color-gris-melange">
+              <p>#9C9C9C Gris Melange</p>
+            </span>
+            <span class="color-azul-marino">
+              <p>#252440 Azul Marino</p>
+            </span>
+            <span class="color-verde">
+              <p>#008000 Verde</p>
+            </span>
+            <span class="color-amarillo">
+              <p>#FFFF00 Amarillo</p>
+            </span>
+            <span class="color-naranja">
+              <p>#FF8000 Naranja</p>
+            </span>
+            <span class="color-rosa">
+              <p>#F7BFBE Rosa</p>
+            </span>
+            <span class="color-gris-topo">
+              <p>#646b63 Gris Topo</p>
+            </span>
+            <span class="color-temporada">
+              <p>Color de temporada a pedido</p>
+            </span>
+            <img src="img/cortes/Jersey-30-1-Peinado.jpg" class="card-img-top" loading="lazy"
+              alt="tela tipo jersey 30 1 Peinado">
             <div class="card-body">
               <h5 class="card-title">Jersey 30/1 peinado</h5>
               <p><span style="color: rgb(7, 161, 71); font-size: 2vw;">*Stock permanente</span></p>
-<!--               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p> -->
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <span class="color-negro"><p>#000 Negro </p></span>
-            <span class="color-blanco"><p>#FFF Blanco</p></span>
-            <span class="color-gris-melange"><p>#9C9C9C Gris Melange</p></span>
-            <span class="color-azul-marino"><p>#252440 Azul Marino</p></span>
-            <span class="color-verde"><p>#008000 Verde</p></span>
-            <span class="color-amarillo"><p>#FFFF00 Amarillo</p></span>
-            <span class="color-naranja"><p>#FF8000  Naranja</p></span>
-            <span class="color-rosa"><p>#F7BFBE Rosa</p></span>
-            <span class="color-gris-topo"><p>#646b63 Gris Topo</p></span>
-            <span class="color-temporada"><p>Color de temporada a pedido</p></span>
-            <img src="img/cortes/rustico-invisible.jpg" class="card-img-top" alt="...">
+            <span class="color-negro">
+              <p>#000 Negro </p>
+            </span>
+            <span class="color-blanco">
+              <p>#FFF Blanco</p>
+            </span>
+            <span class="color-gris-melange">
+              <p>#9C9C9C Gris Melange</p>
+            </span>
+            <span class="color-azul-marino">
+              <p>#252440 Azul Marino</p>
+            </span>
+            <span class="color-verde">
+              <p>#008000 Verde</p>
+            </span>
+            <span class="color-amarillo">
+              <p>#FFFF00 Amarillo</p>
+            </span>
+            <span class="color-naranja">
+              <p>#FF8000 Naranja</p>
+            </span>
+            <span class="color-rosa">
+              <p>#F7BFBE Rosa</p>
+            </span>
+            <span class="color-gris-topo">
+              <p>#646b63 Gris Topo</p>
+            </span>
+            <span class="color-temporada">
+              <p>Color de temporada a pedido</p>
+            </span>
+            <img src="img/cortes/rustico-invisible.jpg" loading="lazy" class="card-img-top"
+              alt="tela tipo rustico invisible">
             <div class="card-body">
               <h5 class="card-title">Rústico invisible </h5>
               <p><span style="color: grey; font-size: 2vw;">*A pedido</span></p>
-<!--               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p> -->
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <span class="color-negro"><p>#000 Negro </p></span>
-            <span class="color-blanco"><p>#FFF Blanco</p></span>
-            <span class="color-gris-melange"><p>#9C9C9C Gris Melange</p></span>
-            <span class="color-azul-marino"><p>#252440 Azul Marino</p></span>
-            <span class="color-verde"><p>#008000 Verde</p></span>
-            <span class="color-amarillo"><p>#FFFF00 Amarillo</p></span>
-            <span class="color-naranja"><p>#FF8000  Naranja</p></span>
-            <span class="color-rosa"><p>#F7BFBE Rosa</p></span>
-            <span class="color-gris-topo"><p>#646b63 Gris Topo</p></span>
- 
- <span class="color-temporada"><p>Color de temporada a pedido</p></span>           <img src="img/cortes/interlook.jpg" class="card-img-top" alt="...">
+            <span class="color-negro">
+              <p>#000 Negro </p>
+            </span>
+            <span class="color-blanco">
+              <p>#FFF Blanco</p>
+            </span>
+            <span class="color-gris-melange">
+              <p>#9C9C9C Gris Melange</p>
+            </span>
+            <span class="color-azul-marino">
+              <p>#252440 Azul Marino</p>
+            </span>
+            <span class="color-verde">
+              <p>#008000 Verde</p>
+            </span>
+            <span class="color-amarillo">
+              <p>#FFFF00 Amarillo</p>
+            </span>
+            <span class="color-naranja">
+              <p>#FF8000 Naranja</p>
+            </span>
+            <span class="color-rosa">
+              <p>#F7BFBE Rosa</p>
+            </span>
+            <span class="color-gris-topo">
+              <p>#646b63 Gris Topo</p>
+            </span>
+            <span class="color-temporada">
+              <p>Color de temporada a pedido</p>
+            </span>
+            <img src="img/cortes/interlook.jpg" class="card-img-top" loading="lazy" alt="tela tipo interlook">
             <div class="card-body">
               <h5 class="card-title">Interlock</h5>
               <p><span style="color: grey; font-size: 2vw;">*A pedido</span></p>
-<!--               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p> -->
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <span class="color-negro"><p>#000 Negro </p></span>
-            <span class="color-blanco"><p>#FFF Blanco</p></span>
-            <span class="color-gris-melange"><p>#9C9C9C Gris Melange</p></span>
-            <span class="color-azul-marino"><p>#252440 Azul Marino</p></span>
-            <span class="color-verde"><p>#008000 Verde</p></span>
-            <span class="color-amarillo"><p>#FFFF00 Amarillo</p></span>
-            <span class="color-naranja"><p>#FF8000  Naranja</p></span>
-            <span class="color-rosa"><p>#F7BFBE Rosa</p></span>
-            <span class="color-gris-topo"><p>#646b63 Gris Topo</p></span>
-      
-      <span class="color-temporada"><p>Color de temporada a pedido</p></span>      <img src="img/cortes/ribb.jpg" class="card-img-top" alt="...">
+            <span class="color-negro">
+              <p>#000 Negro </p>
+            </span>
+            <span class="color-blanco">
+              <p>#FFF Blanco</p>
+            </span>
+            <span class="color-gris-melange">
+              <p>#9C9C9C Gris Melange</p>
+            </span>
+            <span class="color-azul-marino">
+              <p>#252440 Azul Marino</p>
+            </span>
+            <span class="color-verde">
+              <p>#008000 Verde</p>
+            </span>
+            <span class="color-amarillo">
+              <p>#FFFF00 Amarillo</p>
+            </span>
+            <span class="color-naranja">
+              <p>#FF8000 Naranja</p>
+            </span>
+            <span class="color-rosa">
+              <p>#F7BFBE Rosa</p>
+            </span>
+            <span class="color-gris-topo">
+              <p>#646b63 Gris Topo</p>
+            </span>
+            <span class="color-temporada">
+              <p>Color de temporada a pedido</p>
+            </span>
+            <img src="img/cortes/ribb.jpg" class="card-img-top" loading="lazy" alt="tela tipo ribb">
             <div class="card-body">
               <h5 class="card-title">Ribb</h5>
               <p><span style="color: grey; font-size: 2vw;">*A pedido</span></p>
-<!--               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p> -->
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <span class="color-negro"><p>#000 Negro </p></span>
-            <span class="color-blanco"><p>#FFF Blanco</p></span>
-            <span class="color-gris-melange"><p>#9C9C9C Gris Melange</p></span>
-            <span class="color-azul-marino"><p>#252440 Azul Marino</p></span>
-            <span class="color-verde"><p>#008000 Verde</p></span>
-            <span class="color-amarillo"><p>#FFFF00 Amarillo</p></span>
-            <span class="color-naranja"><p>#FF8000  Naranja</p></span>
-            <span class="color-rosa"><p>#F7BFBE Rosa</p></span>
-            <span class="color-gris-topo"><p>#646b63 Gris Topo</p></span>
-    
-    <span class="color-temporada"><p>Color de temporada a pedido</p></span>        <img src="img/cortes/morley.jpg" class="card-img-top" alt="...">
+            <span class="color-negro">
+              <p>#000 Negro </p>
+            </span>
+            <span class="color-blanco">
+              <p>#FFF Blanco</p>
+            </span>
+            <span class="color-gris-melange">
+              <p>#9C9C9C Gris Melange</p>
+            </span>
+            <span class="color-azul-marino">
+              <p>#252440 Azul Marino</p>
+            </span>
+            <span class="color-verde">
+              <p>#008000 Verde</p>
+            </span>
+            <span class="color-amarillo">
+              <p>#FFFF00 Amarillo</p>
+            </span>
+            <span class="color-naranja">
+              <p>#FF8000 Naranja</p>
+            </span>
+            <span class="color-rosa">
+              <p>#F7BFBE Rosa</p>
+            </span>
+            <span class="color-gris-topo">
+              <p>#646b63 Gris Topo</p>
+            </span>
+            <span class="color-temporada">
+              <p>Color de temporada a pedido</p>
+            </span>
+            <img src="img/cortes/morley.jpg" class="card-img-top" loading="lazy" alt="tela tipo morley">
             <div class="card-body">
               <h5 class="card-title">Morley</h5>
               <p><span style="color: grey; font-size: 2vw;">*A pedido</span></p>
-<!--               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p> -->
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <span class="color-negro"><p>#000 Negro </p></span>
-            <span class="color-blanco"><p>#FFF Blanco</p></span>
-            <span class="color-gris-melange"><p>#9C9C9C Gris Melange</p></span>
-            <span class="color-azul-marino"><p>#252440 Azul Marino</p></span>
-            <span class="color-verde"><p>#008000 Verde</p></span>
-            <span class="color-amarillo"><p>#FFFF00 Amarillo</p></span>
-            <span class="color-naranja"><p>#FF8000  Naranja</p></span>
-            <span class="color-rosa"><p>#F7BFBE Rosa</p></span>
-            <span class="color-gris-topo"><p>#646b63 Gris Topo</p></span>
-            <span class="color-temporada"><p>Color de temporada a pedido</p></span>
-            <img src="img/cortes/Friza-invisible.jpeg" class="card-img-top" alt="...">
+            <span class="color-negro">
+              <p>#000 Negro </p>
+            </span>
+            <span class="color-blanco">
+              <p>#FFF Blanco</p>
+            </span>
+            <span class="color-gris-melange">
+              <p>#9C9C9C Gris Melange</p>
+            </span>
+            <span class="color-azul-marino">
+              <p>#252440 Azul Marino</p>
+            </span>
+            <span class="color-verde">
+              <p>#008000 Verde</p>
+            </span>
+            <span class="color-amarillo">
+              <p>#FFFF00 Amarillo</p>
+            </span>
+            <span class="color-naranja">
+              <p>#FF8000 Naranja</p>
+            </span>
+            <span class="color-rosa">
+              <p>#F7BFBE Rosa</p>
+            </span>
+            <span class="color-gris-topo">
+              <p>#646b63 Gris Topo</p>
+            </span>
+            <span class="color-temporada">
+              <p>Color de temporada a pedido</p>
+            </span>
+            <img src="img/cortes/Friza-invisible.jpeg" class="card-img-top" loading="lazy"
+              alt="tela tipo friza invisible">
             <div class="card-body">
               <h5 class="card-title">Friza invisible </h5>
               <p><span style="color: grey; font-size: 2vw;">*A pedido</span></p>
-<!--               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p> -->
             </div>
           </div>
         </div>
         <div class="card mb-3 w-100" style="background-color: #26272b; color: #fff;">
-            <div class="col-md-8">
-              <div class="card-body">
-                <h2 class="card-title">Fason a pedido</h2>
-                <p class="card-text">Contactanos para solicitar venta por fason</p>
-
-              </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">Fason a pedido</h2>
+              <p class="card-text">Contactanos para solicitar venta por fason</p>
             </div>
           </div>
         </div>
       </div>
-
-      
-
+      </div>
     </section>
     <!-- FORMULARIO -->
     <div class="text-center mb-5 contactanos" id="contactanos">
       <h3>Contactanos</h3>
       <hr>
     </div>
-
-
-
     <div id="booking" class="section">
       <div class="section-center">
         <div class="container">
@@ -322,7 +450,7 @@
             <div class="booking-form">
               <div class="booking-bg">
                 <div class="form-header">
-                  <h2><img src="img/logo/Olitex-logo-blanco.png" class="w-100" alt=""></h2>
+                  <h2><img src="img/logo/Olitex-logo-blanco.png" class="w-100" loading="lazy" alt="logo olitex"></h2>
                 </div>
               </div>
               <form>
@@ -407,38 +535,41 @@
       </div>
     </div>
   </main>
-
-
   <!-- Site footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="row  d-flex align-items-center">
         <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
-       <a href="#">Olitex developer</a>.
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+            <a href="#">Olitex developer</a>.
           </p>
         </div>
-
         <div class="col-md-4 col-sm-6 col-xs-12">
           <ul class="social-icons d-flex">
-            <li><a class="facebook" href="#"> <i class="fa fa-facebook"> </i> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-            </svg></a></li>
-            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <rect x="4" y="4" width="16" height="16" rx="4" />
-              <circle cx="12" cy="12" r="3" />
-              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-            </svg></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <rect x="4" y="4" width="16" height="16" rx="2" />
-              <line x1="8" y1="11" x2="8" y2="16" />
-              <line x1="8" y1="8" x2="8" y2="8.01" />
-              <line x1="12" y1="16" x2="12" y2="11" />
-              <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-            </svg></a></li>   
+            <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100077348190908" target="_blank"> <i class="fa fa-facebook"> </i> <svg xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/olitextejeduria/" target="_blank"><i class="fa fa-instagram"></i> <svg xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <rect x="4" y="4" width="16" height="16" rx="4" />
+                  <circle cx="12" cy="12" r="3" />
+                  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i> <svg xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <rect x="4" y="4" width="16" height="16" rx="2" />
+                  <line x1="8" y1="11" x2="8" y2="16" />
+                  <line x1="8" y1="8" x2="8" y2="8.01" />
+                  <line x1="12" y1="16" x2="12" y2="11" />
+                  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg></a></li>
           </ul>
         </div>
       </div>
@@ -447,50 +578,57 @@
     <div class="container">
       <div class="row row-footer d-flex justify-content-around">
         <div class="footer-descriction col-sm-12 col-md-6">
-          <h6><img src="img/logo/Olitex-logo-blanco.png" class="footer-img" alt=""></h6>
-          <p class="text-justify p-3">Somos una empresa textil dedicada a la tejeduría de punto. <br>  Para asegurarnos que nuestro producto sean de
+          <h6><img src="img/logo/Olitex-logo-blanco.png" class="footer-img" alt="logo olitex"></h6>
+          <p class="text-justify p-3">Somos una empresa textil dedicada a la tejeduría de punto. <br> Para asegurarnos
+            que nuestro producto sean de
             excelente calidad trabajamos con las mejores hilanderías a nivel nacional para ofrecerte la mejor opción
-            precio calidad 
+            precio calidad
         </div>
-
         <div class="col-xs-6 col-md-5">
           <h6 class="m-3">Contacto</h6>
           <ul class="footer-links">
-            <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home m-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <polyline points="5 12 3 12 12 3 21 12 19 12" />
-              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-              <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-            </svg> Chile 1023, San Miguel</li>
-            <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at m-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <circle cx="12" cy="12" r="4" />
-              <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
-            </svg> olitextejeduria@gmail.com</li>
-            <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call m-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-              <path d="M15 7a2 2 0 0 1 2 2" />
-              <path d="M15 3a6 6 0 0 1 6 6" />
-            </svg> 2320 - 424159</li>
-            <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile m-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <rect x="7" y="4" width="10" height="16" rx="1" />
-              <line x1="11" y1="5" x2="13" y2="5" />
-              <line x1="12" y1="17" x2="12" y2="17.01" />
-            </svg> +54 9 11 6969 1057</li>
+            <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home m-2" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+              </svg> Chile 1023, San Miguel</li>
+            <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at m-2" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+              </svg> olitextejeduria@gmail.com</li>
+            <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call m-2" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                <path d="M15 7a2 2 0 0 1 2 2" />
+                <path d="M15 3a6 6 0 0 1 6 6" />
+              </svg> 2320 - 424159</li>
+            <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile m-2"
+                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="7" y="4" width="10" height="16" rx="1" />
+                <line x1="11" y1="5" x2="13" y2="5" />
+                <line x1="12" y1="17" x2="12" y2="17.01" />
+              </svg> +54 9 11 6969 1057</li>
             <li>- Gracias por visitar Olitex -</li>
           </ul>
         </div>
       </div>
       <hr>
     </div>
-
-</footer>
+  </footer>
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
@@ -498,14 +636,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
   </script>
-
-
-  <!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
   <!-- nav -->
   <script src="js/nav.js"></script>
-  
   <!-- Email.JS -->
   <script src="js/app.js"></script>
 </body>

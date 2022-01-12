@@ -307,9 +307,8 @@ a {
 /* Blanco, 2negro, 3gris melange, 4azul marino, 5verde, 6amarillo, 7naranja, 8rosa, 9gris topo, 10color de temporada a pedido. */
 
 
-h1 {
-  color: black;
-  background-color: aquamarine;
+h1:hover {
+cursor: pointer;
 }
 
 /* hr{ 
